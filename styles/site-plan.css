@@ -1,0 +1,56 @@
+:root {
+/* CSS HSL */
+--orange-wheel: hsla(27, 89%, 56%, 1);
+--dark-spring-green: hsla(155, 63%, 28%, 1);
+--gunmetal: hsla(186, 71%, 8%, 1);
+--spring-green: hsla(147, 91%, 56%, 1);
+
+/*
+--orange-wheel: #f3852bff;
+--dark-spring-green: #1a744fff;
+--gunmetal: #062023ff;
+--spring-green: #29f585f 
+*/
+
+}
+
+
+body {
+    background: var(--gunmetal);
+    color: var(--spring-green);
+    font-family: "Raleway", sans-serif;
+    
+    
+}
+
+/* --------------- HEADER -------------- */
+
+header {
+    background: linear-gradient(rgb(51, 179, 125), #1a744fff);
+    padding: 1rem; 
+
+}
+
+header h1 {
+    color: var(--gunmetal);
+}
+
+
+
+/* --------------- MAIN -------------- */
+
+main {
+    box-shadow: 0 0 10px inset var(--spring-green);
+    padding: 10px;
+}
+
+button {
+    background-color: var(--orange-wheel);
+    padding: .8rem;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 2px 2px 2px rgb(15, 7, 0);
+}
+
+
+/* --------------- FOOTER --------------- */
