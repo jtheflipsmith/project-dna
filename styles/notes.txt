@@ -1,0 +1,71 @@
+header {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    background: var(--blue-ncs);
+    padding: 1rem; 
+    box-shadow: 0 0 20px springgreen inset;
+    margin: -10px;
+}
+
+header div a {
+
+    color: var(--night);
+    font-size: 25px;
+    text-decoration: none;
+
+}
+
+.navigation {
+    display: flex;
+    justify-content: end;
+    margin-right: 3rem;
+
+
+}
+
+.navigation a {
+    padding: 2rem;
+    margin: 5px;
+    color: var(--night);
+    text-decoration: none;
+    font-size: 18px;
+
+}
+
+.navigation a:hover {
+    background: hsla(27, 89%, 56%, .8);
+    box-shadow: 0 0 10px var(--poppy) inset;
+    padding: 2rem;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+}
+
+
+
+
+main {
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    margin-top: 15px;
+}
+.intro p {
+    color: var(--spring-green);
+}
+
+.intro {
+    margin-right: 1rem;
+    padding: 1rem;
+    box-shadow: inset 0 0 10px var(--spring-green);
+}
+
+.page img {
+    width: 500px;
+}

@@ -3,32 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DNA World Site</title>
-    <meta name="description" content="photo album, story, and backstory surounding a fictional world">
-    <meta name="suthor" content="JtheflipSmith">
-    <link rel="stylesheet" href="styles/main.css">
-    <script src="scripts/main.js" defer></script>
+    <title>Options Company Website</title>
+    <meta name="description" content="Company website for cleaning and yard services">
+    <meta name="author" content="Joshua Smith">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/options.css">
+    <link rel="stylesheet" href="styles/options-large.css">
+    <script src="scripts/options.js" defer></script>
 </head>
 <body>
     <header>
-        <img src="" alt="">
-        <h1>DNA World</h1>
+
+
+        <a id="menu" href="#" class="active"></a>
         <nav>
-            <a href="#">Home</a>
-            <a href="#">Beginnings</a>
-            <a href="#">About</a>
-            <a href="#">Contact Us</a>
+            <img src="images/options-logo.jpeg" alt="Company logo">
+            <ul class="navigation">
+                <li><a id="home" href="#">Home</a></li>
+                <li><a id="service" href="services.html">Services</a></li>
+                <li><a id="price" href="#">Pricing</a></li>
+                <li><a id="about" href="about.html">About Us</a></li>
+                <li><a id="contact" href="#">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
     <main>
-        <div class="intro">
-            <p></p>
-        </div>
-        <div>
-            <img src="images/" alt="hero image">
-            
+        <img src="images/window.webp" alt="window cleaning">
+        <img src="images/mower.jpg" alt="">
+        <img src="images/wiping.webp" alt="">
+
+        <article >
+            <h2>You are never without options</h2>
+            <p>Options is here to make your life easier with our comprehensive cleaning services, designed to tackle any task, big or small. Whether it's maintaining your lawn, deep-cleaning your kitchen, or handling those hard-to-reach windows, we've got you covered.</p>
+            <p>Life can get overwhelming with so many responsibilities. That's where we come in—giving you back your time so you can focus on what truly matters. Spending quality moments with family, enjoying your hobbies, or simply relaxing. Let us handle the chores so you can reclaim your day.</p>
+            <p>From spotless floors to perfectly manicured lawns, Options is the answer to all your cleaning needs. You have Options—let us show you how we can help!</p>
+        </article>
+        <form action="" class="infoF">
+            <h2>Get a free estimate</h2>
+            <label for="name">Name <input type="text" id="name"></label>
+            <label for="">Number to Contact <input type="text" id="phone"></label>
+            <label for="">Address <input type="text"></label>
+        </form>
+        <div class="services">
+            <section id="window">
+                <h2>Window Cleaning</h2>
+                <ul>
+                    <li>Interior & Exterior</li>
+                    <li>Screen Cleaning</li>
+                    <li>Track Cleaning</li>
+                </ul>
+            </section>
+            <section id="lawn">
+                <h2>Lawn Care</h2>
+                <ul>
+                    <li>Mowing & Edging</li>
+                    <li>Fertilization</li>
+                    <li>Weed Control</li>
+                </ul>
+            </section>
+            <section id="scrub">
+                <h2>House Cleaning</h2>
+                <ul>
+                    <li>Deep Cleaning</li>
+                    <li>Regular Maintenance</li>
+                    <li>Moving In/Out Cleaning</li>
+                </ul>
+            </section>
         </div>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="site-menu">
+            <h3>Quick Menu</h3>
+            <a href="#">Home</a>
+            <a href="services.html">Services</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div>
+            <h3>Contact Info</h3>
+        </div>
+
+    </footer>
+    
 </body>
 </html>

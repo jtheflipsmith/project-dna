@@ -1,0 +1,241 @@
+:root {
+    /* CSS HEX */
+--black-olive: #272c26ff;
+--light-coral: #ea7179ff;
+--emerald: #15cb64ff;
+--blue-ncs: #078fc5ff;
+
+/* CSS HSL */
+--black-olive: hsla(110, 7%, 16%, 1);
+--poppy: hsla(356, 74%, 56%, 1);
+--emerald: hsla(146, 81%, 44%, 1);
+--blue-ncs: hsla(197, 93%, 40%, 1);
+
+}
+
+
+body {
+    font-family: "Work Sans", sans-serif;
+    background: var(--black-olive);
+}
+
+/* ---- HEADER ----- */
+
+header {
+    background: var(--black-olive);
+    color: antiquewhite;
+    padding: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    border-bottom: 2px solid black;
+}
+
+#menu {
+    display: block;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    background-color: var(--emerald);
+    color: var(--black-olive);
+    border-radius: 3px;
+}
+
+#menu::before {
+    content: "≡"
+}
+
+header img {
+    height: 92px;
+    flex: right;
+}
+
+
+
+.navigation li {
+    list-style: none;
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    color: lightgrey;
+    padding: 1rem;
+    transition: 0.5s;
+    margin: none;
+}
+
+.navigation a:hover{
+    box-shadow: inset 1px 1px 2px rgb(46, 46, 46);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+#home:hover {
+    background: lightgray;
+    color: var(--black-olive);
+}
+
+
+#service:hover {
+    background: var(--blue-ncs);
+    color: var(--black-olive);
+
+}
+
+#price:hover {
+    background: var(--emerald);
+    color: var(--black-olive);   
+}
+
+#about:hover {
+    background: var(--light-coral);
+    color: var(--black-olive);
+}
+
+#contact:hover {
+    background: rgb(143, 44, 224);
+    color: black;
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before{
+    content: "X";
+}
+/* --------- MAIN ---------- */
+
+main {
+    display: block;
+}
+
+main img {
+    width: 100%;
+}
+
+article {
+    padding: 10px;
+    background: var(--emerald);
+    margin: 1.5rem;
+    border-radius: 3px;
+}
+
+article h2 {
+    background: gray;
+    padding: 5px;
+    margin-left: -1rem;
+    box-shadow: 3px 3px 5px darkgreen;
+}
+
+.infoF input {
+    display: block;
+    padding: .75rem;
+    width: 90%;
+}
+
+.infoF {
+    background: var(--black-olive);
+    padding: 10px;
+    grid-column: 2/3;
+    color: var(--blue-ncs);
+    margin-right: 15px;
+}
+
+
+
+.services section {
+    background-color: lightgray;
+    padding: 0 1rem 1rem;
+    border-radius: 5px;
+    box-shadow: 0 5px 6px;
+}
+
+
+#window:hover {
+    background: var(--blue-ncs);
+}
+
+
+/* --------- ABOUT --------- */
+
+#aboutPage {
+    background: white;
+}
+
+#aboutPage h1{
+    text-align: center;
+    grid-column: 1/4;
+    
+}
+
+#aboutPage p {
+    padding: 10px;
+    grid-column: 1/4;
+}
+
+.cards {
+    display: block;
+    padding-bottom: 10px;
+}
+
+.cards img {
+    border-radius: 1px;
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    box-shadow: 3px 3px 3px gray;
+    
+    
+}
+
+section {
+    background: lightseagreen;
+    border-radius: 3px;
+    padding: 1rem;
+    border: 2px solid purple;
+    
+}
+
+/* -------- SERVICES --------- */
+
+#services {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: white;
+}
+
+#services h1 {
+    grid-column: 1 / 5;
+    color: violet;
+}
+
+#services div {
+    margin: 10px;
+    padding: 1.5rem;
+}
+
+.wserve {
+    background: var(--blue-ncs);
+    border-radius: 5px;
+    grid-column: 1/4;
+}
+
+.lserve {
+    background: var(--emerald);
+    border-radius: 5px;
+    grid-column: 2/5;
+}
+
+.hserve {
+    background: var(--light-coral);
+    border-radius: 5x;
+    grid-column: 1/4;
+}
